@@ -1,10 +1,7 @@
 package ndk.nikhil.gym_class_accounter;
 
-import android.support.constraint.ConstraintLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 
 import ndk.utils.Activity_Utils;
@@ -14,7 +11,7 @@ public class Activity_Home extends Gym_Class_Accounter {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_blank);
+        setContentView(R.layout.activity_home);
 
         //TODO : Activity blank to Utils
 
