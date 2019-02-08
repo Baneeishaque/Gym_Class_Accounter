@@ -1,6 +1,7 @@
+<!--TODO : Make translation in malayalam-->
 <resources>
     <string name="app_name">Fitness First</string>
     <string name="notifications">Notifications</string>
     <string name="collect_fee">Collect Fee</string>
-    <string name="members">Members</string>
+    <string name="members">Unpaid Members</string>
 </resources>
