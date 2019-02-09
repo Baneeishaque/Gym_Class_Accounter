@@ -4,20 +4,29 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import ndk.utils.Activity_Utils;
 
 public class Activity_Home extends Gym_Class_Accounter {
+
+    @BindView(R.id.button_notifications)
+    Button button_Notifications;
+    @BindView(R.id.button_collect_fee)
+    Button button_Collect_Fee;
+    @BindView(R.id.button_members)
+    Button button_Members;
+    @BindView(R.id.button_unpaid_members)
+    Button button_Unpaid_Members;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        ButterKnife.bind(this);
 
         //TODO : Activity blank to Utils
-
-//        ConstraintLayout layout_constraint_activity_blank=findViewById(R.id.layout_constraint_activity_blank);
-
-        //TODO : Use Plugins to generate layout fields
 
         /*
         <Button
@@ -38,6 +47,8 @@ public class Activity_Home extends Gym_Class_Accounter {
          */
 
         //TODO : Create above button
+
+        //        ConstraintLayout layout_constraint_activity_blank=findViewById(R.id.layout_constraint_activity_blank);
 //        Button button_notifications=new Button(this);
 //        button_notifications.setLayoutParams(new ConstraintLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,48));
 ////        button_notifications.setBackground(getDrawable(ndk.utils.R.drawable.shape_button));
@@ -45,12 +56,23 @@ public class Activity_Home extends Gym_Class_Accounter {
 //
 //        layout_constraint_activity_blank.addView(button_notifications);
 
-        Button button_notifications = findViewById(R.id.button_notifications);
-        button_notifications.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Activity_Utils.start_activity(activity_context, Activity_Home.class);
-            }
-        });
+    }
+
+    @OnClick({R.id.button_notifications, R.id.button_collect_fee, R.id.button_members, R.id.button_unpaid_members})
+    public void onViewClicked(View view) {
+        switch (view.getId()) {
+            case R.id.button_notifications:
+                Activity_Utils.start_activity(activity_context, Activity_Notifications.class);
+                break;
+            case R.id.button_collect_fee:
+                Activity_Utils.start_activity(activity_context, Activity_Collect_Fee.class);
+                break;
+            case R.id.button_members:
+                Activity_Utils.start_activity(activity_context, Activity_Members.class);
+                break;
+            case R.id.button_unpaid_members:
+                Activity_Utils.start_activity(activity_context, Activity_Members.class);
+                break;
+        }
     }
 }

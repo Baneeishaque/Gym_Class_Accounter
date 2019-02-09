@@ -3,5 +3,10 @@
     <string name="app_name">Fitness First</string>
     <string name="notifications">Notifications</string>
     <string name="collect_fee">Collect Fee</string>
-    <string name="members">Unpaid Members</string>
+    <string name="unpaid_members">Unpaid Members</string>
+    <string name="members">Members</string>
+    <string name="error_message_empty">Empty</string>
+    <string name="error_message_digit">Error</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="submit">Submit</string>
 </resources>

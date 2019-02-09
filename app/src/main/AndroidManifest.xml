@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="ndk.nikhil.gym_class_accounter">
 
     <application
@@ -8,13 +9,29 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/icon_fitness_first_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".Activity_Notifications"></activity>
+        <activity android:name=".Activity_Collect_Fee" />
+        <activity android:name=".Activity_Add_Member" />
         <activity android:name=".Activity_Home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity_Members"
+            android:label="@string/members"
+            android:theme="@style/AppTheme.Template.Base">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
     </application>
 

@@ -28,6 +28,11 @@ dependencies {
 //    b42559c92995fbf8c59c4f98f5193be022539f26
     implementation 'com.github.Baneeishaque:Android_Common_Utils:v13'
     implementation 'com.android.support.constraint:constraint-layout:2.0.0-alpha3'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+//    implementation 'me.riddhimanadib.form-master:form-master:1.1.0'
+    implementation 'com.emmasuzuki:easyform:1.2.1@aar'
+    implementation 'com.jakewharton:butterknife:9.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0'
     testImplementation 'junit:junit:4.13-beta-2'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
