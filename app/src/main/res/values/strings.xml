@@ -9,4 +9,9 @@
     <string name="error_message_digit">Error</string>
     <string name="hello_world">Hello world!</string>
     <string name="submit">Submit</string>
+    <string name="main_agent">Main</string>
+    <string name="sub_agent">Sub</string>
+    <string name="login_details">Login Details</string>
+    <string name="ticket_rates">Ticket Rates</string>
+    <string name="agent_amount_details">Agent Amount Details</string>
 </resources>
