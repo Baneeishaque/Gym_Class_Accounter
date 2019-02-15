@@ -3,6 +3,7 @@ package ndk.nikhil.gym_class_accounter;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
@@ -13,6 +14,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 
+import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -29,6 +31,12 @@ public class Activity_Add_Member extends Gym_Class_Accounter {
     Button join_date, submit;
     private ImageView mImageView;
     private Calendar start_calendar = Calendar.getInstance();
+
+    public static byte[] getBitmapAsByteArray(Bitmap bitmap) {
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.PNG, 0, outputStream);
+        return outputStream.toByteArray();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,7 +98,7 @@ public class Activity_Add_Member extends Gym_Class_Accounter {
                 EditText address = findViewById(R.id.address);
                 EditText fee = findViewById(R.id.fee);
 
-                long id = db.insertNote(name.getText().toString(), address.getText().toString(), "", join_date.getText().toString().substring(join_date.getText().toString().indexOf(":") + 1), spinner.getSelectedItem().toString(), fee.getText().toString());
+                long id = db.insertNote(name.getText().toString(), address.getText().toString(), getBitmapAsByteArray(((BitmapDrawable) mImageView.getDrawable()).getBitmap()), join_date.getText().toString().substring(join_date.getText().toString().indexOf(":") + 1), spinner.getSelectedItem().toString(), fee.getText().toString());
                 Log_Utils.debug("Gym_Class_Accounter", String.valueOf(id), BuildConfig.DEBUG);
                 Toast_Utils.longToast(activity_context, "Inserted : " + id);
 

@@ -16,7 +16,7 @@ public class Model_Gym_Class {
                     + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
                     + COLUMN_NAME + " TEXT,"
                     + COLUMN_ADDRESS + " TEXT,"
-                    + COLUMN_PHOTO + " TEXT,"
+                    + COLUMN_PHOTO + " BLOB,"
                     + COLUMN_JOIN_DATE + " TEXT,"
                     + COLUMN_FEE_STRUCTURE + " TEXT,"
                     + COLUMN_FEE + " TEXT"
