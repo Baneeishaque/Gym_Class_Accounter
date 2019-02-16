@@ -64,6 +64,7 @@ public class Activity_Add_Member extends Gym_Class_Accounter {
         mImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //TODO : Camera Permissions
                 dispatchTakePictureIntent();
             }
         });
