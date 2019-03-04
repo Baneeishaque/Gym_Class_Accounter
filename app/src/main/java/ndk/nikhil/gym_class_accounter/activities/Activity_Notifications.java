@@ -1,4 +1,4 @@
-package ndk.nikhil.gym_class_accounter;
+package ndk.nikhil.gym_class_accounter.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

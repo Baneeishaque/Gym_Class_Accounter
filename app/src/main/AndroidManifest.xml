@@ -24,10 +24,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <activity android:name=".Activity_Notifications"></activity>
-        <activity android:name=".Activity_Collect_Fee" />
-        <activity android:name=".Activity_Add_Member" />
-        <activity android:name=".Activity_Home">
+        <activity android:name=".activities.Activity_Notifications"></activity>
+        <activity android:name=".activities.Activity_Collect_Fee_Old" />
+        <activity android:name=".activities.Activity_Add_Member" />
+        <activity android:name=".activities.Activity_Home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -35,7 +35,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activity_Members"
+            android:name=".activities.Activity_Members"
             android:label="@string/members"
             android:theme="@style/AppTheme.Template.Base">
 
@@ -46,21 +46,45 @@
             <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
             <!-- </intent-filter> -->
         </activity>
-        <activity android:name=".nabeel.Main2Activity">
+        <activity
+            android:name=".nabeel.Main2Activity"
+            android:label="Main 2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".nabeel.Main3Activity">
+        <activity
+            android:name=".nabeel.Main3Activity"
+            android:label="Main 3">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".nabeel.MemberPageActivity">
+        <activity
+            android:name=".nabeel.MemberPageActivity"
+            android:label="Member page">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".recyclerview_items.RecyclerView_Item_Member"
+            android:label="Recycler View Item Member">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.Activity_Collect_Fee"
+            android:label="Collect Fee">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

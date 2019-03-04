@@ -1,4 +1,4 @@
-package ndk.nikhil.gym_class_accounter;
+package ndk.nikhil.gym_class_accounter.activities;
 
 import android.os.Bundle;
 import android.view.View;
@@ -7,6 +7,8 @@ import android.widget.Button;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import ndk.nikhil.gym_class_accounter.Gym_Class_Accounter;
+import ndk.nikhil.gym_class_accounter.R;
 import ndk.utils.Activity_Utils;
 
 public class Activity_Home extends Gym_Class_Accounter {
@@ -65,7 +67,7 @@ public class Activity_Home extends Gym_Class_Accounter {
                 Activity_Utils.start_activity(activity_context, Activity_Notifications.class);
                 break;
             case R.id.button_collect_fee:
-                Activity_Utils.start_activity(activity_context, Activity_Collect_Fee.class);
+                Activity_Utils.start_activity(activity_context, Activity_Collect_Fee_Old.class);
                 break;
             case R.id.button_members:
                 Activity_Utils.start_activity(activity_context, Activity_Members.class);

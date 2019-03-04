@@ -1,4 +1,4 @@
-package ndk.nikhil.gym_class_accounter;
+package ndk.nikhil.gym_class_accounter.activities;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
@@ -19,6 +19,10 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
+import ndk.nikhil.gym_class_accounter.BuildConfig;
+import ndk.nikhil.gym_class_accounter.DatabaseHelper;
+import ndk.nikhil.gym_class_accounter.Gym_Class_Accounter;
+import ndk.nikhil.gym_class_accounter.R;
 import ndk.utils.Activity_Utils;
 import ndk.utils.Date_Picker_Utils;
 import ndk.utils.Date_Utils;

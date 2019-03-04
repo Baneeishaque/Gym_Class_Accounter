@@ -1,4 +1,4 @@
-package ndk.nikhil.gym_class_accounter;
+package ndk.nikhil.gym_class_accounter.activities;
 
 import android.app.SearchManager;
 import android.graphics.Color;
@@ -18,6 +18,10 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import ndk.nikhil.gym_class_accounter.AbstractModel;
+import ndk.nikhil.gym_class_accounter.Gym_Class_Accounter;
+import ndk.nikhil.gym_class_accounter.Members_RecyclerView_Adapter;
+import ndk.nikhil.gym_class_accounter.R;
 import ndk.utils.Activity_Utils;
 
 

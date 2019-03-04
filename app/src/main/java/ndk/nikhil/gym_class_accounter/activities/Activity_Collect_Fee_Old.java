@@ -1,4 +1,4 @@
-package ndk.nikhil.gym_class_accounter;
+package ndk.nikhil.gym_class_accounter.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -14,9 +14,12 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
+import ndk.nikhil.gym_class_accounter.DatabaseHelper;
+import ndk.nikhil.gym_class_accounter.Model_Gym_Class;
+import ndk.nikhil.gym_class_accounter.R;
 import ndk.utils.Date_Utils;
 
-public class Activity_Collect_Fee extends AppCompatActivity {
+public class Activity_Collect_Fee_Old extends AppCompatActivity {
 
     Button join_date, submit;
     private ImageView mImageView;
@@ -25,7 +28,7 @@ public class Activity_Collect_Fee extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_collect_fee);
+        setContentView(R.layout.activity_collect_fee_old);
 
         join_date = findViewById(R.id.button_join);
         join_date.setText("Date : " + Date_Utils.get_current_date_string_in_normal_format());

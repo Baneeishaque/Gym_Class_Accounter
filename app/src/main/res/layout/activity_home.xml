@@ -5,7 +5,7 @@
     android:id="@+id/layout_constraint_activity_blank"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_Home">
+    tools:context=".activities.Activity_Home">
 
     <Button
         android:id="@+id/button_notifications"
