@@ -5,21 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".nabeel.MemberPageActivity">
+    tools:context=".activities.Activity_Member_Profile">
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="203dp"
         android:layout_height="wrap_content"
-        android:contentDescription="TODO"
+        android:contentDescription="@string/member_image"
         android:scaleType="fitStart"
-        tools:srcCompat="@tools:sample/avatars[11]" />
+        app:srcCompat="@mipmap/ic_launcher" />
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_menu_edit" />
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        android:contentDescription="@string/edit_icon" />
 
     <Space
         android:layout_width="match_parent"
@@ -29,7 +30,8 @@
         android:id="@+id/imageButton3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_menu_delete" />
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        android:contentDescription="@string/delete_icon" />
 
     <Space
         android:layout_width="match_parent"
@@ -39,7 +41,7 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Name" />
+        android:text="@string/name" />
 
     <Space
         android:layout_width="match_parent"
@@ -49,7 +51,7 @@
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Address :" />
+        android:text="@string/address" />
 
     <Space
         android:layout_width="match_parent"
@@ -59,7 +61,7 @@
         android:id="@+id/textView7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Member ID :" />
+        android:text="@string/member_id" />
 
     <Space
         android:layout_width="match_parent"
@@ -69,6 +71,6 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="COLLECT FEE" />
+        android:text="@string/collect_fee" />
 
 </LinearLayout>

@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".recyclerview_items.RecyclerView_Item_Member">
 
     <!--TODO : Remove default hello world page-->
     <!--TODO : Add activities to manifest as launchers with labels-->
@@ -11,6 +13,7 @@
     <!--TODO : Use src for images - android src & tools src-->
     <!--TODO : Extract string resources-->
     <!--TODO : Use Correct Names for Files-->
+    <!--TODO : Use git PRs-->
 
     <TextView
         android:id="@+id/textView6"
