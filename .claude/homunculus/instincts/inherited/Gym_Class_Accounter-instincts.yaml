@@ -1,0 +1,259 @@
+# Instincts generated from https://github.com/baneeishaque/Gym_Class_Accounter
+# Generated: 2026-07-21T03:14:12.267Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: Gym_Class_Accounter-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/baneeishaque/Gym_Class_Accounter
+---
+
+# Gym_Class_Accounter Commit Length
+
+## Action
+
+Keep commit messages concise (~23 characters)
+
+## Evidence
+
+- Average commit message length: 23 chars
+- Based on 1 commits
+
+---
+id: Gym_Class_Accounter-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/baneeishaque/Gym_Class_Accounter
+---
+
+# Gym_Class_Accounter Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: Gym_Class_Accounter-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/baneeishaque/Gym_Class_Accounter
+---
+
+# Gym_Class_Accounter Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: Gym_Class_Accounter-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/baneeishaque/Gym_Class_Accounter
+---
+
+# Gym_Class_Accounter Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: Gym_Class_Accounter-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/baneeishaque/Gym_Class_Accounter
+---
+
+# Gym_Class_Accounter Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: gym_class_accounter-instinct-file-naming
+trigger: "When creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: baneeishaque/Gym_Class_Accounter
+---
+
+# Gym_class_accounter Instinct File Naming
+
+## Action
+
+Name the file using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.files
+
+---
+id: gym_class_accounter-instinct-function-naming
+trigger: "When defining a function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: baneeishaque/Gym_Class_Accounter
+---
+
+# Gym_class_accounter Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions
+
+---
+id: gym_class_accounter-instinct-class-naming
+trigger: "When defining a class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: baneeishaque/Gym_Class_Accounter
+---
+
+# Gym_class_accounter Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes
+
+---
+id: gym_class_accounter-instinct-constant-naming
+trigger: "When declaring a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: baneeishaque/Gym_Class_Accounter
+---
+
+# Gym_class_accounter Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants
+
+---
+id: gym_class_accounter-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: baneeishaque/Gym_Class_Accounter
+---
+
+# Gym_class_accounter Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle
+
+---
+id: gym_class_accounter-instinct-export-style
+trigger: "When exporting code elements"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: baneeishaque/Gym_Class_Accounter
+---
+
+# Gym_class_accounter Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle
+
+---
+id: gym_class_accounter-instinct-test-location
+trigger: "When adding new tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: baneeishaque/Gym_Class_Accounter
+---
+
+# Gym_class_accounter Instinct Test Location
+
+## Action
+
+Place test files in a separate folder from source files
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+
+---
+id: gym_class_accounter-instinct-commit-format
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: baneeishaque/Gym_Class_Accounter
+---
+
+# Gym_class_accounter Instinct Commit Format
+
+## Action
+
+Write a short, freeform message without a specific prefix
+
+## Evidence
+
+- Pattern in commits.type
+- Example: 'Update Gradle to v6.9.4'
+
